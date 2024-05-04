@@ -11,34 +11,42 @@
     $num_1 = (int)$_POST['number_1'];
     $num_2 = (int)$_POST['number_2'];
 
-    $product = $num_1 * $num_2;
+    $result = $num_1 * $num_2;
 
-    $num_1_d = str_split(strrev((string)$num_1));
-    $num_2_d = str_split(strrev((string)$num_2));
+    $num_1_digits = str_split(strrev((string)$num_1));
+    $num_2_digits = str_split(strrev((string)$num_2));
 
-    $result_lines = [];
-
-    foreach ($num_2_d as $index2 => $digit2) {
-        $line = "";
+    $intermediate_results = [];
+    $e=0;
+    foreach ($num_2_digits as $digit_2) {
+        $current_result = '';
         $carry = 0;
-        for ($i = 0; $i < $index2; $i++) {
-            $line .= "&nbsp;";
-        }
-
-        foreach ($num_1_d as $index1 => $digit1) {
-            $p_product = $digit1 * $digit2 + $carry;
-            $carry = floor($p_product / 10);
-            $line .= $p_product % 10;
+        
+        foreach ($num_1_digits as $digit_1) {
+            $product = ($digit_1 * $digit_2) + $carry;
+            $carry = (int)($product / 10);
+            $current_result .= $product % 10;
         }
 
         if ($carry > 0) {
-            $line .= $carry;
+            $current_result .= $carry;
         }
 
-        $result_lines[] = $line;
+        $intermediate_results[] = strrev($current_result);
+        $e++;
     }
-    $result_lines[] = str_repeat("-", max(strlen($num_1), strlen($num_2)));
-    $result_lines[] = $product;
-    echo implode("<br>", array_reverse($result_lines));
-?>
+    echo $num_1 . "<br>" . $num_2 . "<br>";
+    echo str_repeat('-', $e) . PHP_EOL . "<br>";
+    $line_length = strlen($intermediate_results[count($intermediate_results) - 1]);
+    foreach ($intermediate_results as $index => $result_line) {
+        for ($c=$e;$c!=0;$c--) {
+            echo "&nbsp&nbsp";
+        }
+        echo str_pad($result_line, $line_length, ' ', STR_PAD_LEFT) . "<br>";
+        $e--;
 
+    }
+
+    echo str_repeat('-', $line_length) . PHP_EOL . "<br>";
+    echo str_pad($result, $line_length, ' ', STR_PAD_LEFT) . PHP_EOL;
+?>
