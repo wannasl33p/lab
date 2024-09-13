@@ -1,0 +1,27 @@
+.circle-1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(185, 238, 185);
+    position: relative;
+    
+}
+.circle-1 > .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.inner-circle {
+    position: absolute;
+    top: 13%;
+    left: 13%;
+    width: 74%;
+    height: 74%;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
