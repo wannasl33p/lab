@@ -1,0 +1,54 @@
+.connect{
+    position: relative;
+    display: flex;
+    background-color: rgb(244, 221, 76);
+    width: 45px;
+    height: 90px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5px;
+
+    
+}
+.text_2{
+    writing-mode: vertical-lr;
+    transform: scale(-1);
+    font-size: 12px;
+    font-weight: bold;
+}
+.content{
+    position:fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 250px;
+    height: 90px;
+    border-radius: 0 9px 9px 0 ;
+    background-color: rgb(57, 59, 59);
+    left: -230px;
+    top: 65%;
+    transition: left 0.7s;
+    overflow: hidden;
+
+}
+.img{
+    position: relative;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+}
+.text_1{
+    position: relative;
+    color: white;
+    font-size: 13px;
+    margin-left: 5px;
+
+}
+.content:hover {
+    left:0;
+    transition: left 1.2s;
+    }
+
+

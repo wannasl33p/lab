@@ -24,7 +24,7 @@
     z-index: 1;
     background-color: #ffffff;
     min-width: 120px;    
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 .dropdown-content a {
     color: blue;
@@ -36,7 +36,6 @@
 
 .dropdown-content a:hover {background-color:blue;
     color:white;
-    
     
 }
 
@@ -50,6 +49,7 @@
     display: inline-block;
     text-decoration: solid;
     border-radius: 3px 3px 0 0;
+    box-shadow: 0 1px 2px  rgba(0, 0, 0, 0.3);
 
     
     }
