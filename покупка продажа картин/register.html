@@ -4,42 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистация</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <div>
-        <a href="head.html">На главную</a>
-    </div>
-    <div>
-        <a href="login.html">Войти в аккаунт</a>
-    </div>
-<div>
-    <fieldset>
-        <legend>
+    <header>
+        <h1><a href="catalog.html">На главную</a></h1>
+        <div class="login-button">
+            <a href="login.html" class="login-label">Войти в аккаунт</a>
+        </div>
+    </header>
+<main>
+    <fieldset class="for-fieldset">
+        <legend class="legend">
             Регистрация
         </legend>
+
         <form action="" method="post">
-            <label for="lastname">Фамилия</label><br>
+            <label for="lastname">Фамилия</label>
             <input type="text" id="lastname" name="lastname" required/>  <br>
     
-            <label for="name">Имя</label><br>
+            <label for="name">Имя</label>
             <input type="text" id="name" name="name" required/><br>
     
-            <label for="surname">Отчество</label><br>
+            <label for="surname">Отчество</label>
             <input type="text" id="surname" name="surname"required/> <br>  
     
-            <label for="email">E-mail</label><br>
+            <label for="email">E-mail</label>
             <input type="email" id="email" name="email" required/>  <br>
     
-            <label for="password">Пароль</label><br>
+            <label for="password">Пароль</label>
             <input type="password" id="password" name="password" required/>  <br>
     
-            <label for="birthdate">Дата рождения</label><br>
-            <input type="date" id="birthdate" name="birthdate" min="1900-01-01" required/><br>
-    
-            <button type="submit">Зарегистрироваться</button><br>
+            <label for="birthdate">Дата рождения</label>
+            <input type="date" id="birthdate" name="birthdate" min="1900-01-01" required/>
+            <button type="submit">Зарегистрироваться</button>
+            
         </form>
     </fieldset>
-</div>
+</main>
+   
+
+<footer>
+        <hr>
+        <h3>Свяжитесь с нами</h3>
+        <p>Если у вас есть вопросы или предложения, не стесняйтесь <a href="feedback.html">обращаться к нашей команде поддержки.</a></p>
+</footer>
+
 
 </body>
 </html>

@@ -1,0 +1,81 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 125%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: font-size 0.3s, color 0.3s;
+}
+a:hover {
+    font-size: 110%;
+    color: #0056b3;
+}
+.catalog-button{
+    position: relative;
+    align-self: center;
+    margin: 1em;
+}
+.catalog-button a {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.login-button {
+    position: fixed;
+    max-width: 8em;
+    max-height: 4em;
+    background-color: rgb(139, 139, 139);
+    justify-content: center;
+    border-radius: 30px;
+    padding: 0.3em;
+    align-items: center;
+    top: 1em;
+    right: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-label {
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hello, .market-info {
+    position: relative;
+    max-width: 30%;
+    min-width: 20em;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    padding: 1em;
+}
+.hello {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.market-info {
+    background-color: rgb(189, 255, 198);
+    
+}
+.market-label-info {
+    text-align: center;
+    margin-bottom: 1em;
+}
+hr {
+    border: 1px solid black;
+    max-width: 30%;
+    margin: 2em auto;
+}
+.contacts {
+    position: relative;
+    text-align: center;
+    padding: 1em;
+}
