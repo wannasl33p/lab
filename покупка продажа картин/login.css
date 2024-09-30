@@ -52,7 +52,6 @@ main{
 }
 .legend{
     position: relative;
-    align-self: center;
     font-weight: bold;
     font-size: 22px;
     text-transform: uppercase;
@@ -69,7 +68,9 @@ main{
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.8)
+    background-color: rgba(255, 255, 255, 1);
+    
+    
 }
 
 label{
@@ -85,11 +86,6 @@ input{
     outline:none;
     background-color: #F6F6f6;
     margin-bottom: 0.5em;
-
-}
-.reg{
-    position: relative;
-    align-self: center;
 }
 button{
     width: 100%;
@@ -101,6 +97,12 @@ button{
 }
 button:hover{
     background-image:linear-gradient( rgb(255, 255, 255),rgb(189, 255, 198));
+    
+}
+.for-fieldset a{
+    position: relative;
+    text-decoration: underline;
+    color: rgb(126, 126, 126);
     
 }
 

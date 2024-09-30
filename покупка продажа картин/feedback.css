@@ -1,7 +1,9 @@
 @import url(normalize.css);
 body {
+    background-color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .main{
     flex: 1;
     display: flex;
@@ -14,6 +16,7 @@ a {
 .for-header{
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 .login-button {
     position: absolute;
@@ -40,43 +43,46 @@ a {
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
     font-size: smaller;
-    
-
 }
-.info{
+.contacts{
     display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    background-color: rgb(189, 255, 198);
+    justify-content: center;
+}
+.contacts > a{
+    margin: 10px;
+}
+.under-contacts{
+    display: flex;
+    padding: 1em;
+    color: white;
     justify-content: space-around;
 }
-.hello, .market-info {
-    position: relative;
-    max-width: 30%;
-    min-width: 17em;
-    box-sizing: border-box;
+form {
+    display: flex;
+    flex-direction: column;
+    top:0;
+
+}
+textarea{
+    width: 11em;
+    height: 4em;
+    resize: none;
+    outline: none;
+    background-color: black;
+    border: 1px solid rgb(189, 255, 198);
+    color: white;
+}
+.for-button > button{
+    outline: none;
+    border: 1px solid rgb(189, 255, 198); 
     border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1em;
-    padding: 1em;
+    text-transform: uppercase;
+    color:white;
+    background-color: black;
 }
-.hello {
-    background-color: #f9f9f9;
-    text-align: center;
-}
-.market-info {
-    background-color: rgb(189, 255, 198);
-    
-}
-.market-label-info {
-    text-align: center;
-    margin-bottom: 1em;
-}
-hr {
-    border: 1px solid black;
-    max-width: 30%;
-    margin: 2em auto;
-}
-footer{
-    align-items: center;
-    text-align: center;
-    
+.for-button{
+    display: flex;
+    justify-content: center;
 }

@@ -4,25 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
-    <div>
-        <a href="head.html">На главную</a>
-    </div>
-    <h2>
-        Наши контакты
-    </h2>
-    <div>
-        <a href="">Контакт 1</a>
-        <a href="">Контакт 2</a>
-        <a href="">Контакт 2</a>
-    </div>
-    <h2>
-        Оставте отзыв
-    </h2>
-    <form>
-        <p><textarea name="comment"></textarea></p>
-        <p><input type="submit"></p>
-       </form>
+    <header>
+        <div class="for-header">
+            <h1><a href="catalog.html">На главную</a></h1>
+                <div class="login-button">
+                    <a href="login.html" class="login-label">Войти в аккаунт</a>
+                </div>
+        </div>  
+    </header>
+    <main class="main">
+        <div class="contacts">
+            <a href="">
+                <img src="logos/inst.png" width="100px" >
+            </a>
+            <a href="">
+                <img src="logos/vk.png" width="100px" >
+            </a>
+
+        </div>
+        <div class="under-contacts">
+            <div>
+                <p>Телефон: +228</p>
+                <p>Почта: @gmail.com</p>
+                <p>Время работы 11.00-12.00</p>
+            </div>
+            <form>
+                <h2>
+                    Оставте отзыв
+                </h2>
+                <p><textarea name="comment"></textarea></p>
+                <div class="for-button">
+                    <button type="submit">Отправить</button>
+                </div>
+               </form>
+        </div>
+
+        
+    </main>
+    
 </body>
 </html>
