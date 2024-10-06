@@ -1,0 +1,28 @@
+@import url(normalize.css);
+body{
+    display: flex;
+    background-color: black;
+}
+.hour-1{
+    display: flex;
+    flex-direction: column;
+}
+.hour-2{
+    display: flex;
+    flex-direction: column;
+}
+.minutes-1{
+    display: flex;
+    flex-direction: column;
+}
+.minutes-2{
+    display: flex;
+    flex-direction: column;
+}
+.colon{
+    object-fit:contain;
+}
+.hour{
+    position: absolute;
+}
+
