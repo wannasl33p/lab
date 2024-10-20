@@ -2,6 +2,8 @@
 body{
     display: flex;
     background-color: black;
+    justify-content: center;
+    
 }
 .hour-1{
     display: flex;
@@ -22,7 +24,12 @@ body{
 .colon{
     object-fit:contain;
 }
-.hour{
-    position: absolute;
+.hour {
+    display: none;
 }
+.ampm{
+    display: flex;
+    flex-direction: column;
+}
+
 
