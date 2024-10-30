@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистация</title>
     <link rel="stylesheet" href="register.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="register.js"></script>
+    <link rel ="stylesheet" href="footer.css">
+    <link rel ="stylesheet" href="header.css">
 </head>
 <body>
     <header>
         <div class="for-header">
-            <h1><a href="catalog.html">На главную</a></h1>
-            <div class="login-button">
-                <a href="login.html" class="login-label">Войти в аккаунт</a>
+            <div class="interactive-button">
+                <a href="head.html">о нас</a>
+            </div>
+                <h1><a href="catalog.html"> <img src="logo-color.png" width="28px" id="logo"> Галерея</a></h1>
+            <div class="interactive-button">
+                <a href="login.html">Войти в аккаунт</a>
+                
             </div>
         </div>
-
     </header>
 <main>
     <fieldset class="for-fieldset">
@@ -23,14 +30,9 @@
         </legend>
 
         <form action="" method="post">
-            <label for="lastname">Фамилия</label>
-            <input type="text" id="lastname" name="lastname" required/>  <br>
     
             <label for="name">Имя</label>
             <input type="text" id="name" name="name" required/><br>
-    
-            <label for="surname">Отчество</label>
-            <input type="text" id="surname" name="surname"required/> <br>  
     
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" required/>  <br>
@@ -40,7 +42,7 @@
     
             <label for="birthdate">Дата рождения</label>
             <input type="date" id="birthdate" name="birthdate" min="1900-01-01" required/>
-            <button type="submit">Зарегистрироваться</button>
+            <button type="submit" id="submit">Зарегистрироваться</button>
             
         </form>
     </fieldset>

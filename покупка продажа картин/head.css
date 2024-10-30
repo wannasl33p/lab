@@ -11,55 +11,39 @@ a {
     text-decoration: none;
     color: #007BFF;
 }
-.for-header{
-    display: flex;
-    justify-content: center;
-}
-.login-button {
-    position: absolute;
-    height: 25px;
-    width: 100px;
-    background-color: rgb(139, 139, 139);
-    border-radius: 30px 0px 30px 30px;
-    padding: 0.2em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    top: 0;
-    right:0;
-    align-content: center;
-    text-align: center;
-}
-.for-header > h1{
-    text-transform: uppercase;
-}
-.for-header > h1 a{
-    color: rgb(0, 0, 0);
-}
 
-.login-label {
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: smaller;
-    
-
-}
 .info{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .hello, .market-info {
+    display: flex;
+    flex-direction: column;
     position: relative;
     max-width: 30%;
-    min-width: 17em;
+    min-width: 10%;
     box-sizing: border-box;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1em;
     padding: 1em;
+    align-items: center;
 }
 .hello {
+
     background-color: #f9f9f9;
+    
+}
+.close-info {
+    position: relative;
+    width: 55px;
+    color: gray;
+    padding: 1px;
+    font-size:13px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
     text-align: center;
 }
 .market-info {
@@ -68,7 +52,7 @@ a {
 }
 .market-label-info {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 hr {
     border: 1px solid black;

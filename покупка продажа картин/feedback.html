@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
     <link rel="stylesheet" href="feedback.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="feedback.js"></script>
 </head>
 <body>
     <header>
@@ -16,6 +18,20 @@
         </div>  
     </header>
     <main class="main">
+
+        <div id="warning">
+            <form>
+                <p><textarea name="comment" placeholder="Оставте отзыв о нашем сайте!"></textarea></p>
+                <div class="for-button">
+                    <button type="submit">Отправить</button>
+                </div>
+               </form>
+            <span id="warn-close">ₓ
+            </span>
+            <p id="text">
+    
+            </p>
+        </div>
         <div class="contacts">
             <a href="">
                 <img src="logos/inst.png" width="100px" >
@@ -31,15 +47,7 @@
                 <p>Почта: @gmail.com</p>
                 <p>Время работы 11.00-12.00</p>
             </div>
-            <form>
-                <h2>
-                    Оставте отзыв
-                </h2>
-                <p><textarea name="comment"></textarea></p>
-                <div class="for-button">
-                    <button type="submit">Отправить</button>
-                </div>
-               </form>
+            <h2 id="review">Оставте отзыв</h2>
         </div>
 
         

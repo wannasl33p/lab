@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="header_dark.css">
+    <script src="jquery-3.7.1.min.js" defer></script>
+    <script src="edit-profile.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="for-header">
+            <div class="interactive-button">
+                <a href="head.html">о нас</a>
+            </div>
+                <h1><a href="catalog.html"> <img src="logo-color.png" width="28px" id="logo"> Галерея</a></h1>
+            <div class="interactive-button">
+                <a href="login.html">Войти в аккаунт</a>
+            </div>
+        </div>
+    </header>
+<main>
+
+    <div id="user">
+        <p2>
+            Информация о пользователе
+        </p2>
+        <hr>
+        <p3 id="name">
+        
+        </p3>
+        <p3 id="email">
+        
+        </p3>
+        <div class="edit-info">
+            Изменить
+        </div>
+    </div>
+<div class="user-edit">
+    <p2>
+        Редактирование информации
+    </p2>
+    <hr>
+    <form action="" class="edit-form">
+        <div class="help-edit">
+            <label for="name-edit">Имя</label>
+            <input type="text" id="name-edit" name="name-edit"  required/>
+        </div>
+        <div class="help-edit">
+            <label for="email-edit">E-mail</label>
+            <input type="email" id=email-edit" name="email-edit"  required/>
+        </div>
+        <div class="help-edit">
+            <label for="address-edit-edit">Адрес, индекс</label>
+            <input type="text" id="address-edit" name="address-edit"/>
+        </div>
+        <div class="help-edit" id="submit-edit">
+            <button type="submit" id="cansel">Отмена</button>
+            <button type="submit" id="confitm">Ок</button>
+        </div>
+    </form>
+</div>
+</main>
+</body>
+</html>

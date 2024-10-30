@@ -63,26 +63,50 @@ form {
     display: flex;
     flex-direction: column;
     top:0;
-
 }
 textarea{
-    width: 11em;
-    height: 4em;
+    width: 20em;
+    height: 10em;
     resize: none;
     outline: none;
-    background-color: black;
-    border: 1px solid rgb(189, 255, 198);
-    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 10px;
 }
 .for-button > button{
     outline: none;
-    border: 1px solid rgb(189, 255, 198); 
-    border-radius: 30px;
+    border: none; 
+    border-radius: 5px;
     text-transform: uppercase;
-    color:white;
-    background-color: black;
 }
 .for-button{
     display: flex;
     justify-content: center;
+}
+#warning {
+    display: none;
+    align-self: center;
+    margin: auto;
+    padding: 1em;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    opacity: 0;
+}
+#warning #warn-close {
+    width: 21px; height: 21px;
+    position: absolute;
+    font-size: 29px;
+    top: 1px; right: 11px;
+    cursor: pointer;
+    color: gray;
+    
+}
+#text {
+    text-align: center;
+}
+#review {
+    color: white;
+    cursor: pointer;
 }
