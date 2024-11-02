@@ -22,7 +22,7 @@ a {
     flex-direction: column;
     position: relative;
     max-width: 30%;
-    min-width: 10%;
+    min-width: 20em;
     box-sizing: border-box;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
